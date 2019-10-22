@@ -4,6 +4,9 @@
 #include "pch.h"
 #include <iostream>
 #include <string>
+#include "factorial.h";
+#include "Person.h";
+#include "Matrix.h";
 
 using std::cin;
 using std::cout;
@@ -98,7 +101,7 @@ int main()
 	//	i++;
 	//} while (i < 10);
 
-	 char s1[] = { 'h','e','l','l','o' };
+	/* char s1[] = { 'h','e','l','l','o' };
 	 char s2[] = "hello";
 	 int size = sizeof(s2);
 	 for (int i = 0; i < sizeof(s2); i++)
@@ -135,7 +138,32 @@ int main()
 	 string hello = "hello";
 	 cout << hello << endl;
 	 
+	 cout << "4! = " << factorial(4) << endl;*/
 
+	 /*cout << "Указатели : " << endl;
+	 int h = 5;
+	 int *r;
+	 r = &h;
+	 cout << "h = " << h << endl;
+	 cout << "r = &h = " << r << endl;
+	 cout << "*r = " << *r << endl;
+
+	 *r = 45;
+	 cout << "h = " << h << endl;
+	 cout << "pointer address = " << &r << endl;
+
+	 char symbol = 'P';
+	 char *s = &symbol;
+	 cout << "*s = " << s << endl;
+	 cout << "(int *)s = " << (int *)s << endl;*/
+
+	Person person = Person("Paul",20);
+	person.show();
+
+	double matr[2][3] = { {2,2,2} , {3,3,3} };
+	Matrix matrix = Matrix();
+	matrix.Show();
+	
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -1,2 +1,8 @@
 ﻿  HelloC++.cpp
+c:\users\pavel_halian\source\repos\helloc++\helloc++\helloc++.cpp(7): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\pavel_halian\source\repos\helloc++\helloc++\helloc++.cpp(8): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\pavel_halian\source\repos\helloc++\helloc++\person.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\pavel_halian\source\repos\helloc++\helloc++\helloc++.cpp(9): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Matrix.cpp
+  Generating Code...
   HelloC++.vcxproj -> C:\Users\Pavel_Halian\source\repos\HelloC++\Debug\HelloC++.exe
