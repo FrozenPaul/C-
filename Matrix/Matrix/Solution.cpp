@@ -1,21 +1,23 @@
-﻿// Matrix.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
-
+#include "pch.h"
 #include <iostream>
 #include <string>
 #include <vector>
 #include "Matrix.h"
+#include <sstream>
+#include <iterator>
 
 using std::cout;
 using std::cin;
 using std::endl;
 using std::vector;
+using std::istringstream;
+using std::istream_iterator;
 
 int main()
 {
-	setlocale(LC_ALL,"Russian");
+	setlocale(LC_ALL, "Russian");
 	vector<vector<double>> mas1 = { {1,1,1}, {2,2,2},{3,3,3} };
-	vector<vector<double>> mas2 = { {1,1,1}, {2,2,2},{3,3,3} };
+	vector<vector<double>> mas2 = { {1,1,1}, {2,2,2},{3,3,3} ,{4,4,4} };
 	Matrix matr1 = Matrix(mas1);
 	Matrix matr2 = Matrix(mas2);
 	matr1.Show();
@@ -29,4 +31,10 @@ int main()
 
 	Matrix matr4 = matr1 * matr2;
 	matr4.Show();
+
+	Matrix matr5 = Matrix("Text1.txt");
+	matr5.Show();
+
+	(matr5*matr1).Show();
+
 }

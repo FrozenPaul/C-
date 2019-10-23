@@ -1,17 +1,63 @@
-#include "Matrix.h"
+#include "pch.h"
 #include <iostream>
+#include "Matrix.h"
 #include <vector>
+#include <fstream>
+#include <sstream>
+#include <iterator>
 
 using std::cout;
 using std::endl;
 using std::vector;
+using std::ifstream;
+using std::istringstream;
+using std::istream_iterator;
+using std::stod;
+using std::exception;
 
+Matrix::Matrix() {}
 
-Matrix::Matrix(){}
-
-Matrix::Matrix(vector<vector<double>> mas)
+Matrix::Matrix(string filePath)
 {
-	this->mas = mas;
+	try
+	{
+		string line;
+		ifstream in(filePath);
+		if (in.is_open())
+		{
+			while (getline(in, line))
+			{
+				istringstream buf(line);
+				istream_iterator<string> beg(buf), end;
+				vector<string> strings(beg, end);
+
+				vector<double> vect;
+
+				for (string s : strings)
+				{
+					vect.push_back(stod(s));
+				}
+
+				mas.push_back(vect);
+			}
+		}
+		else
+		{
+			throw exception("File not exist");
+		}
+		in.close();
+	}
+	catch (const exception ex)
+	{
+		cout << ex.what() << endl;
+		exit(1);
+	}
+	
+}
+
+Matrix::Matrix(vector<vector<double>> max) : mas(max)
+{
+	//this->mas = max;
 }
 
 Matrix::~Matrix()
@@ -58,15 +104,30 @@ Matrix Matrix::operator-(Matrix b)
 
 Matrix Matrix::operator*(Matrix b)
 {
-	vector<vector<double>> matr = mas;
-	for (int i = 0; i < matr.size(); i++)
+	try
 	{
-		for (int j = 0; j < matr[i].size(); j++)
+		if (mas[0].size() == b.mas.size() )
 		{
-			matr[i][j] = i_na_j(i,j,mas,b.mas);
+			vector<vector<double>> matr = mas;
+			for (int i = 0; i < matr.size(); i++)
+			{
+				for (int j = 0; j < matr[i].size(); j++)
+				{
+					matr[i][j] = i_na_j(i, j, mas, b.mas);
+				}
+			}
+			return Matrix(matr);
+		}
+		else
+		{
+			throw exception("Матрицы нельзя умножить. Кол-во столбцов 1 матрицы не совпадает с кол-вом строк 2.");
 		}
 	}
-	return Matrix(matr);
+	catch (const exception ex)
+	{
+		cout << ex.what() << endl;
+	}
+	
 }
 
 double Matrix::i_na_j(int i, int j, vector<vector<double>> mas1, vector<vector<double>> mas2)

@@ -1,11 +1,12 @@
 ﻿  Matrix.cpp
-C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(24,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(26,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(37,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(39,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(49,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(51,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(62,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(64,21): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(75,20): warning C4018: <: несоответствие типов со знаком и без знака
-  Matrix.vcxproj -> C:\Users\User\source\repos\Matrix\Debug\Matrix.exe
+c:\users\pavel_halian\source\repos\matrix\matrix\matrix.cpp(70): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavel_halian\source\repos\matrix\matrix\matrix.cpp(72): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavel_halian\source\repos\matrix\matrix\matrix.cpp(83): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavel_halian\source\repos\matrix\matrix\matrix.cpp(85): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavel_halian\source\repos\matrix\matrix\matrix.cpp(95): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavel_halian\source\repos\matrix\matrix\matrix.cpp(97): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavel_halian\source\repos\matrix\matrix\matrix.cpp(112): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavel_halian\source\repos\matrix\matrix\matrix.cpp(114): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavel_halian\source\repos\matrix\matrix\matrix.cpp(136): warning C4018: '<': signed/unsigned mismatch
+c:\users\pavel_halian\source\repos\matrix\matrix\matrix.cpp(131): warning C4715: 'Matrix::operator*': not all control paths return a value
+  Matrix.vcxproj -> C:\Users\Pavel_Halian\source\repos\Matrix\Debug\Matrix.exe
