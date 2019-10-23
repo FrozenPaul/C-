@@ -1,0 +1,11 @@
+﻿  Matrix.cpp
+C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(24,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(26,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(37,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(39,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(49,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(51,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(62,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(64,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\User\source\repos\Matrix\Matrix\Matrix.cpp(75,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Matrix.vcxproj -> C:\Users\User\source\repos\Matrix\Debug\Matrix.exe
