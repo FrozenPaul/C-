@@ -1,0 +1,86 @@
+Project:
+
+1) What will be used:
+                ?++, Qt, 3-rd party midi library...
+2) 
+
+
+
+
+
+trello:
+
+class ICallback
+{
+                virtual CallbackParameters(int duration, int key) = 0;
+};
+
+
+
+
+class UIController : public ICallback
+{
+                UIController()
+                {
+                                _midi.RegisterCallback(this);
+                }
+
+                void CallbackParameters(int duration, int key) override
+                {
+                                _form.PressKey(key, duration); 
+                }
+                
+                Play()
+                {
+                                // highlight play button +
+                                _midi.Play();
+                }
+                
+                Stop()
+                {
+                                _midi.Stop();                     
+                }
+
+                private:
+                
+                Form _form;      
+                MidiLib _midi;
+
+};
+
+
+class MidiLib
+{
+                Play() override
+                {
+                                while (playing && newKeyShouldBePressed)
+                                {
+                                                _callback(dureation, key);
+                                }
+                
+                }
+                
+                void RegisterCallback(ICallback* callback)
+                {
+                                _callback = callback;
+                }
+
+                private:
+                
+                ICallback* _callback;
+                
+}
+
+
+main()
+{
+                UI iu;      
+                
+
+                
+
+                //
+                ui.Play();
+                
+                
+}
